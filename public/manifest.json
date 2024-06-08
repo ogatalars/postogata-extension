@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Postman Extension",
+    "version": "1.0",
+    "description": "A Chrome extension that mimics Postman for API testing.",
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "Open Postman Extension"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
+  
